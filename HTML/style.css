@@ -33,7 +33,7 @@ header img {
   /*title inside header style*/
   header h1 {
 
-    color: blue;
+    color: red;
     margin-left: 120px;
     padding: 20px;
     text-shadow: 4px 5px 6px red;
