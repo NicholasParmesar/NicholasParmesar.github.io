@@ -1,0 +1,30 @@
+/*Styling for headings*/
+h1 {
+    font-size: 2.5em;               /*Set the font size of the main header at the top of the page*/
+    margin: 0;                      /*Makes sure there is no space around the main header*/
+}
+
+h2 {
+    font-size: 1.8em;               /*Set font size of secondary header*/
+    color: white;                 /*Set the text color of heading to white*/
+}
+
+h3 {
+    font-size: 1.6em;               /*Set font size of headings inside of sections*/
+    color: rgb(102, 16, 16);      /*Matches the text to have the same color of header and footer background*/
+}
+
+/*Link Styling*/
+a {
+    color: rgb(102, 16, 16);      /*Matches the color of the link to the background color of header and footer*/
+    text-decoration: none;          /*Removes underline from link*/
+    font-weight: bold;              /*Bolds the link text in last paragraph*/
+}
+
+a:hover {
+    text-decoration: underline;     /*Underlines link when hovering over it*/
+}
+
+li {
+    margin-bottom: 0.5em;           /*Adds space in between listed items*/
+}

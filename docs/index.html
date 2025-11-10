@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Parmesar- Personal Profile</title>
+
+    <!--Inline styling rules-->
+    <style>
+        /*Body styling to change background color and set font family*/
+        body {
+            font-family: sans-serif;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+        
+        /*Styling for header*/
+        header {
+            background-color: rgb(102, 16, 16);         /*Change background color of header*/
+            color: white;                               /*Change text color in header to white*/
+            text-align: center;                           /*Align text to center of header*/
+            padding: 2em;
+        }
+
+
+        main {
+            max-width: 750px;           /*Set the max width of the main part of webpage to appear in the center*/
+            margin: 1.2em auto;         /*Adds space betwenn the main part of webpage and its header and footer as well as center main */
+        }
+        
+        /*Section boxes styling*/
+        section {
+            background-color: whitesmoke;                   /*Set the background color of info boxes*/
+            margin-bottom: 1.5em;                             /*Adds space in between the two section boxes*/
+            padding: 1.5em;                                   /*Adds space between the content in the section and its inside border*/
+            border-radius: 8px;                               /*Curves the edges of the boxes*/
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);     /*Gives section boxes a shadow effect*/
+        }
+
+        /*Styled footer the same as header to match each other*/
+        footer {
+            background-color: rgb(102, 16, 16);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+    <!--Link external stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--Header of webpage-->
+    <header>
+        <h1>Nicholas Parmesar</h1>                                  <!--Main header to appear at the top of webpage as my name-->
+        <h2>Computer Programming Student at Humber College</h2>     <!--Secondary header to state my program and institution-->
+    </header>
+
+    <!--The main section about me as the subject-->
+<main>
+    <section>
+        <h3>About Me</h3>
+
+        <!--Profile photo avatar, styled to fit neatly inside of section-->
+        <img src="profile-avatar.jpg" alt="Profile Photo" style="width: 170px; border-radius: 20%; display: block; margin: 1em auto;">
+        
+        <!--Introduction paragraph-->
+        <p>
+            My name is Nicholas Parmesar, and I am a student at Humber College currently doing a diploma in Computer Programming.
+            I am studying as an international student in Canada from South America. I moved to Canada to pursue an education in computer programming
+            as it is something I have always been interested in as well as to have a new experience in a foreign country.
+        </p>
+        
+        <!--Second paragraph containing more information-->
+        <p>
+            Some other random information about me are, My birthday is January 29th, 2007 making me 18 years old as of November 2025.
+            My height is 188cm, my eye color is brown, and my zodiac sign is Aquarius.
+        </p>
+    </section>
+
+    <!-- Second section to state some of my interests-->
+    <section>
+        <h3>Interests</h3>
+
+        <!--Paragraph stating some of my interests-->
+        <p>
+            Computer programming aside, I have many other interests such as gaming, which is what got me into technology and computers,
+            and also music, foreign laguages and other cultures.
+        </p>
+
+        <!--Line styled to match color of header and footer-->
+        <p style="font-weight: bold; color: rgb(102, 16, 16);">Some of my main interests are:</p>
+
+        <!--Unordered list of some of my other interests-->
+        <ul>
+            <li>Gaming and Entertainment</li>
+            <li>Music and Other musical Instruments</li>
+            <li>Computers</li>
+            <li>Foreign languages and cultures</li>
+        </ul>
+
+        <!--Link to external website related to my interest-->
+        <!--Will redirect to page in a new tab-->
+        <p>
+            Since im into gaming, to stay up to date on new releases and news I visit IGN website
+            <a href="https://www.ign.com/ca" target="_blank" rel="noopener noreferrer">IGN</a>
+            and it has the latest news along with reviews and updates on both games and movies.
+        </p>
+
+    </section>
+   </main> 
+
+    <!--Footer with copyright character and my name and year-->
+    <footer>
+        <p>&copy; 2025 Nicholas Parmesar</p>
+    </footer>
+</body>
+</html>
