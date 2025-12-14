@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Student Hub</title>
+    <link rel="stylesheet" href="styles/faqs.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo-part">
+                <div class="logo">ISH<span class="leaf">🍁</span></div>
+                <h1 class="website-title">International Student Hub</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="info.html">Information</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="faqsection">
+        <div class="faqheader">
+            <h1>Frequently Asked Questions</h1>
+            <p>Got question? We got answers!</p>
+            <input id="faqsearchbar" type="text" placeholder="Search Question here">
+        </div>
+
+        <div class="questioncontainer">
+            <h3>Top Five Questions:</h3>
+            <div class="faqitem">
+                <button class="faqquestion">How do I apply for a study permit?</button>
+                <div class="faqanswer"><b>You can apply for a study permit online 
+                through the Government of Canada website. Make sure you have all the required documents ready.</b></div>
+            </div>
+
+            <div class="faqitem">
+                <button class="faqquestion">How do I extend my study permit?</button>
+                <div class="faqanswer"><h3>You must apply online before your current permit expires. Make sure to provide proof of enrollment, 
+                financial support, and any other required documents.</h3></div>
+            </div>
+
+            <div class="faqitem">
+                <button class="faqquestion">What documents do I need to study in Canada?</button>
+                <div class="faqanswer"><b>Typically, you'll need an acceptance letter, proof of funds, a valid passport, 
+                and valid passport photos. Requirements may vary.</b></div>
+            </div>
+
+            <div class="faqitem">
+                <button class="faqquestion">Can I work while studying?</button>
+                <div class="faqanswer"><h3>Short answer is yes but most international students can work up to 20 hours per week during classes and full-time during breaks.</h3></div>
+            </div>
+
+            <div class="faqitem">
+                <button class="faqquestion">Can I bring my family with me while studying in Canada?</button>
+                <div class="faqanswer"><h3>Yes, in many cases, you can bring your spouse and children. Your spouse may be eligible for an open work permit, and your children can attend 
+                school in Canada. Always check the latest immigration rules before applying.</h3></div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>International Student Hub</h3>
+                <p>Helping student all around the world further their education in Canada.</p>
+                <p>Toronto ON,</p>
+                <p>Canada</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 International Student Hub.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll(".faqquestion").forEach(item => {
+        item.addEventListener('click', () => {
+            let parent = item.parentElement;
+            let answer= parent.querySelector(".faqanswer");
+            answer.style.display = answer.style.display === "none"? "block": "none";
+            parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

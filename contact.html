@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Student Hub</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo-part">
+                <div class="logo">ISH<span class="leaf">🍁</span></div>
+                <h1 class="website-title">International Student Hub</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="info.html">Information</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <img id="leftimg" src="Images/contactpic.jpeg" alt="contactspagepicture">
+        <div id="formsection">
+        <h1>Contact Us!</h1>
+        <form id="contactform">
+            <h2>Please fill out this form:</h2>
+            <label for="fnameinput">First name:</label>
+            <input type="text" id="fnameinput" required>
+            <br>
+            <label for="lnameinput">Last name:</label>
+            <input type="text" id="lnameinput" required>
+            <br>
+            <label for="emailinput">Email:</label>
+            <input type="text" id="emailinput" required>
+            <br>
+            <label for="messageinput">Message:</label><br>
+            <textarea id="messageinput" rows="8" required></textarea>
+            <br>
+            <button id="formsubmitbtn" type="submit"><b>Send Message</b></button>
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>International Student Hub</h3>
+                <p>Helping student all around the world further their education in Canada.</p>
+                <p>Toronto ON,</p>
+                <p>Canada</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 International Student Hub.</p>
+        </div>
+    </footer>
+    <script>
+        let form = document.getElementById("contactform");
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let firstname=document.getElementById("fnameinput").value;
+            let lastname=document.getElementById("lnameinput").value;
+            let email=document.getElementById("emailinput").value;
+            let message=document.getElementById("messageinput").value;
+
+            console.log("Message from ", firstname, lastname,":");
+            console.log("First Name: ", firstname);
+            console.log("Last Name: ", lastname);
+            console.log("Email: ", email);
+            console.log("Message: ", message);
+
+            form.reset();
+        });
+    </script>
+</body>
+</html>
